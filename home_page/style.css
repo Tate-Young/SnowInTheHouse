@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*调整a标签的整体样式*/
+a{display: block;}
+
+
+a:link{text-decoration: none;}
+
+/*背景图片随窗口大小改变*/
+html{height: 100%;}
+
+body{
+	background:url(img/plane.png) no-repeat bottom;
+	height: 100%;
+}
+
+
+
+header p[name = MAOC]{
+	font: 1.75em bold;
+	text-align: center;
+	line-height: 60px;
+	background: rgb(76,94,118);
+	padding: 10px;
+	padding-top:30px; 
+	color: white;
+}
+header p[name = SLA]{
+
+	font: 1.25em bold;
+	text-align: center;
+	line-height: 20px;
+	background: url('img/sla.png');
+	color: white;
+	padding: 8px;
+}
+
+/*空容器*/
+div[name]{height: 10px;}
+
+
+/*a标签样式*/
+#navList a{
+	color: white;
+	padding-top: 40px;
+	/*safari中防止点击呈现高亮颜色*/
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+
+#navList li[name = mr] a{padding-left: 30px;}
+
+#navList{
+	overflow: hidden;
+	margin: auto;
+	width: 97%;
+}
+/*li标签样式*/
+#navList li{
+	float: left;
+	/*display: inline-block;*/
+	width: -webkit-calc(50% - 20px);
+	width: calc(50% - 20px);
+	/*width: 45%;*/
+	min-height:120px;
+	/*line-height: 120px; */
+	background: black;
+	text-indent: 20px;
+	border-radius: 15px;
+
+	font:1.8em bold;
+	overflow: hidden;
+	/*border: 1px black solid;*/
+	margin: 5px;
+	margin-left: 12px;
+
+}
+
+#navList li[name = hbzt]{
+	background: url(img/hbzt.png) no-repeat;
+	/*background-size: cover;*/
+	/*-webkit-background-size:cover;*/
+	background-size: 100% 120px;
+	/*-webkit-background-size:100% 120px;*/
+}
+
+#navList li[name = qx]{
+	background: url(img/qx.png) no-repeat;
+	background-size: 100% 120px;
+}
+
+
+#navList li[name = mr]{
+	background: url(img/mr.png) no-repeat;
+	background-size: 100% 120px;
+	/*padding-left: 10px;*/
+}
+
+
+
+#navList li[name = gjcx]{
+	background: url(img/gjcx.png) no-repeat;
+	background-size: 100% 120px;
+}
+

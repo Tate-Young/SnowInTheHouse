@@ -1,0 +1,31 @@
+
+*{margin:0;list-style-type: none;}
+
+body{
+	background:url(img/1.jpg) no-repeat;
+}
+
+
+
+a:link{text-decoration: none;}
+
+/*header p[name = MAOC]{
+	font: 28px bold;
+	text-align: center;
+	line-height: 60px;
+	background: rgb(76,94,118);
+	padding: 10px;
+	padding-top:30px; 
+	color: white;
+}*/
+header p[name = SLA]{
+
+	font: 20px bold;
+	text-align: center;
+	line-height: 20px;
+	background: url('img/sla.png');
+
+	color: white;
+	padding: 8px;
+}
+
