@@ -21,19 +21,21 @@ body{
 
 
 header p[name = MAOC]{
+	box-sizing: border-box;
 	font: 1.75em bold;
 	text-align: center;
-	line-height: 60px;
+	/*line-height: 60px;*/
+	height: 88px;
 	background: rgb(76,94,118);
 	padding: 10px;
-	padding-top:30px; 
+	padding-top: 40px; 
 	color: white;
 }
 header p[name = SLA]{
 
-	font: 1.25em bold;
+	font: 1.0em bold;
 	text-align: center;
-	line-height: 20px;
+	line-height: 15px;
 	background: url('img/sla.png');
 	color: white;
 	padding: 8px;
@@ -46,13 +48,13 @@ div[name]{height: 10px;}
 /*a标签样式*/
 #navList a{
 	color: white;
-	padding-top: 40px;
+	padding-top: 20px;
 	/*safari中防止点击呈现高亮颜色*/
 	-webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
 
-#navList li[name = mr] a{padding-left: 30px;}
+#navList li[name = mr] a{padding-left: 20px;}
 
 #navList{
 	overflow: hidden;
@@ -65,16 +67,14 @@ div[name]{height: 10px;}
 	/*display: inline-block;*/
 	width: -webkit-calc(50% - 20px);
 	width: calc(50% - 20px);
-	/*width: 45%;*/
-	min-height:120px;
-	/*line-height: 120px; */
+	min-height: 60px;
 	background: black;
-	text-indent: 20px;
-	border-radius: 15px;
+	text-indent: 10px;
+	border-radius: 10px;
 
-	font:1.8em bold;
+	font: 1.2em bold;
 	overflow: hidden;
-	/*border: 1px black solid;*/
+	/*border: 1px black solid;*/ 
 	margin: 5px;
 	margin-left: 12px;
 
@@ -84,26 +84,56 @@ div[name]{height: 10px;}
 	background: url(img/hbzt.png) no-repeat;
 	/*background-size: cover;*/
 	/*-webkit-background-size:cover;*/
-	background-size: 100% 120px;
+	background-size: 100% 60px;
 	/*-webkit-background-size:100% 120px;*/
 }
 
 #navList li[name = qx]{
 	background: url(img/qx.png) no-repeat;
-	background-size: 100% 120px;
+	background-size: 100% 60px;
 }
 
 
 #navList li[name = mr]{
 	background: url(img/mr.png) no-repeat;
-	background-size: 100% 120px;
-	/*padding-left: 10px;*/
+	background-size: 100% 60px;
 }
 
 
 
 #navList li[name = gjcx]{
 	background: url(img/gjcx.png) no-repeat;
-	background-size: 100% 120px;
+	background-size: 100% 60px;
 }
 
+
+/*ipad*/
+
+@media screen and (min-width: 768px){
+	#navList li{
+		min-height: 120px;
+	}
+	#navList li[name = hbzt]{
+		background: url(img/hbzt.png) no-repeat;
+		background-size: 100% 120px;
+	}
+	#navList li[name = qx]{
+		background: url(img/qx.png) no-repeat;
+		background-size: 100% 120px;
+	}
+	#navList li[name = mr]{
+		background: url(img/mr.png) no-repeat;
+		background-size: 100% 120px;
+	}
+	#navList li[name = gjcx]{
+		background: url(img/gjcx.png) no-repeat;
+		background-size: 100% 120px;
+	}
+	#navList a{
+		padding-top: 50px;
+		text-indent: 30px;
+		font-size: 1.6em;
+	}
+	#navList li[name = mr] a{padding-left: 30px;}
+
+}
