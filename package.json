@@ -7,9 +7,9 @@
     "port": 3000
   },
   "scripts": {
-    "release:patch": "npm version patch && git push && git push --tags",
-    "release:minor": "npm version minor ",
-    "release:major": "npm version major ",
+    "release:patch": "npm version patch && git add . && git push && git push --tags",
+    "release:minor": "npm version minor && git add . && git push && git push --tags",
+    "release:major": "npm version major && git add . && git push && git push --tags",
     "predeploy": "yarn && npm run build",
     "deploy": "pm2 restart pm2.json",
     "logs": "tail -f logs/*",
